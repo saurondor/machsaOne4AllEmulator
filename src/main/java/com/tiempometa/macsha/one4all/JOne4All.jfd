@@ -1,0 +1,378 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.8.0_192" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.tiempometa.macsha.one4all"
+	"i18n.bundleName": "macshareader"
+	"i18n.keyPrefix": "JOne4All"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "10dlu, labelcompgap, default, labelcompgap, 33dlu, labelcompgap, default, labelcompgap, 24dlu, labelcompgap, 41dlu, labelcompgap, 115dlu"
+			"$rowSpecs": "7dlu, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default, linegap, default"
+		} ) {
+			name: "this"
+			"title": new FormMessage( null, "JOne4All.this.title" )
+			"$sizePolicy": 1
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/com/tiempometa/macsha/one4all/tiempometa_icon_small.png" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "JOne4All.label1.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "powerUpButton"
+				"text": new FormMessage( null, "JOne4All.powerUpButton.text" )
+				"foreground": sfield java.awt.Color red
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "powerUpButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 3
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "JOne4All.label2.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "portTextField"
+				"text": new FormMessage( null, "JOne4All.portTextField.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "JOne4All.label7.text" )
+				"font": &Font0 new java.awt.Font( "Tahoma", 1, 12 )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+				"text": new FormMessage( null, "JOne4All.label18.text" )
+				"font": new java.awt.Font( "Tahoma", 1, 12 )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 5
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "JOne4All.label8.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "readingStatusLabel"
+				"text": new FormMessage( null, "JOne4All.readingStatusLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "startReadingsButton"
+				"text": new FormMessage( null, "JOne4All.startReadingsButton.text" )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startReadingsButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": new FormMessage( null, "JOne4All.label19.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tagTextField"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "tagTextFieldKeyReleased", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "JOne4All.label6.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "pushReadingsStatusLabel"
+				"text": new FormMessage( null, "JOne4All.pushReadingsStatusLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "pushReadsButton"
+				"text": new FormMessage( null, "JOne4All.pushReadsButton.text" )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pushReadsButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+				"text": new FormMessage( null, "JOne4All.label20.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bibTextField"
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 9
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "JOne4All.label5.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 11
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "buzzerStatusLabel"
+				"text": new FormMessage( null, "JOne4All.buzzerStatusLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 11
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buzzerButton"
+				"text": new FormMessage( null, "JOne4All.buzzerButton.text" )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buzzerButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 11
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendTagReadButton"
+				"text": new FormMessage( null, "JOne4All.sendTagReadButton.text" )
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendTagReadButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 11
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "backupFileList"
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 19
+				"gridHeight": 5
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+				"text": new FormMessage( null, "JOne4All.label17.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 13
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "bounceLabel"
+				"text": new FormMessage( null, "JOne4All.bounceLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 13
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "JOne4All.label4.text" )
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 13
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": new FormMessage( null, "JOne4All.label10.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": new FormMessage( null, "JOne4All.label11.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 15
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "backupPathLabel"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 15
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": new FormMessage( null, "JOne4All.label12.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 17
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "readerTimeLabel"
+				"text": new FormMessage( null, "JOne4All.readerTimeLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 17
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "openBackupPathButton"
+				"text": new FormMessage( null, "JOne4All.openBackupPathButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openBackupPathButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 17
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "JOne4All.label3.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 19
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "voltageStatusLabel"
+				"text": new FormMessage( null, "JOne4All.voltageStatusLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 19
+			} )
+			add( new FormComponent( "javax.swing.JSlider" ) {
+				name: "batteryLevelSlider"
+				"maximum": 24
+				"minimum": 18
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "batteryLevelSliderStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 19
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "acPowerCheckBox"
+				"text": new FormMessage( null, "JOne4All.acPowerCheckBox.text" )
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "acPowerCheckBoxStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 21
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": new FormMessage( null, "JOne4All.label9.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 23
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "default, labelcompgap, default"
+				"$rowSpecs": "default, linegap, default, linegap, default, linegap, default"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna1CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna1CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna1CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna5CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna5CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna5CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna2CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna2CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna2CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 3
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna6CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna6CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna6CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 3
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna3CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna3CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna3CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 5
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna7CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna7CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "antenna7CheckBoxItemStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 5
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna4CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna4CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "antenna4CheckBoxStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 7
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "antenna8CheckBox"
+					"text": new FormMessage( null, "JOne4All.antenna8CheckBox.text" )
+					"selected": true
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "antenna8CheckBoxStateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 3
+					"gridY": 7
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 23
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 695, 435 )
+		} )
+	}
+}
