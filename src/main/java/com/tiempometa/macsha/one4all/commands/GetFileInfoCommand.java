@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class GetFileInfoCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(GetFileInfoCommand.class);
+	private static final Logger logger = LogManager.getLogger(GetFileInfoCommand.class);
 
 	// Para traer la información específica de un cierto archivo de backup, el host
 	// envía GETFILEINFO;<FileName><CrLf>.
@@ -148,13 +149,13 @@ public class GetFileInfoCommand extends MacshaCommand {
 	@Override
 	public void parseCommandRow(String[] row) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void sendResponse(OutputStream dataOutputStream) throws IOException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

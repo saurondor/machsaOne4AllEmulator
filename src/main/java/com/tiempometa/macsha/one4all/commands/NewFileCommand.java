@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class NewFileCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(NewFileCommand.class);
+	private static final Logger logger = LogManager.getLogger(NewFileCommand.class);
 
 	// Con el fin de crear un nuevo archivo sin parar el Start mode, el host envía
 	// NEWFILE<CrLf>. Esta operación puede ser realizada solamente en Start mode.
@@ -110,13 +111,13 @@ public class NewFileCommand extends MacshaCommand {
 	@Override
 	public void parseCommandRow(String[] row) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void sendResponse(OutputStream dataOutputStream) throws IOException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void setFileName(String fileName) {

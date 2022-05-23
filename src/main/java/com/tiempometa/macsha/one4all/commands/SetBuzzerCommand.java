@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class SetBuzzerCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(SetBuzzerCommand.class);
+	private static final Logger logger = LogManager.getLogger(SetBuzzerCommand.class);
 
 	// Con el fin de habilitar/deshabilitar el buzzer y la señal lumínica, el host
 	// envía SETBUZZER;<Status><CrLf>.

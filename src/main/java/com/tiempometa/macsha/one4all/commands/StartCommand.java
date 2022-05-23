@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class StartCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(StartCommand.class);
+	private static final Logger logger = LogManager.getLogger(StartCommand.class);
 
 	// Start.
 	// Para comenzar la lectura de los chips, el host envía START<CrLf>

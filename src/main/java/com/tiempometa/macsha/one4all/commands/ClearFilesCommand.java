@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class ClearFilesCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(ClearFilesCommand.class);
+	private static final Logger logger = LogManager.getLogger(ClearFilesCommand.class);
 
 	// Para eliminar todos los archivos de backup disponibles en la memoria, el host
 	// envía CLEARFILES<CrLf>. Esta operación puede ser realizada solamente en Stop

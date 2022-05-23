@@ -30,7 +30,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.tiempometa.macsha.one4all.commands.ClearFilesCommand;
 import com.tiempometa.macsha.one4all.commands.GetFileCommand;
@@ -59,7 +60,7 @@ import com.tiempometa.macsha.one4all.commands.StopCommand;
  */
 public class One4AllState {
 
-	private static final Logger logger = Logger.getLogger(One4AllState.class);
+	private static final Logger logger = LogManager.getLogger(One4AllState.class);
 
 	private long dateTimeOffset = 0;
 	private float voltage = 24f;

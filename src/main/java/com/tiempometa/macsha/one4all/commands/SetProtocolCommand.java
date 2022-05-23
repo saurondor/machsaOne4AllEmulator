@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class SetProtocolCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(SetProtocolCommand.class);
+	private static final Logger logger = LogManager.getLogger(SetProtocolCommand.class);
 
 	// Para configurar la versión de protocolo en el sistema, el host envía
 	// SETPROTOCOL<Version><CrLf>. Esta operación puede ser realizada solamente en
@@ -112,13 +113,13 @@ public class SetProtocolCommand extends MacshaCommand {
 	@Override
 	public void parseCommandRow(String[] row) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void sendResponse(OutputStream dataOutputStream) throws IOException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

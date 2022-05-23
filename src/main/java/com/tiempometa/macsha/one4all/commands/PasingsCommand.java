@@ -26,7 +26,8 @@ package com.tiempometa.macsha.one4all.commands;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author Gerardo Esteban Tasistro Giubetic
@@ -34,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class PasingsCommand extends MacshaCommand {
 
-	private static final Logger logger = Logger.getLogger(PasingsCommand.class);
+	private static final Logger logger = LogManager.getLogger(PasingsCommand.class);
 
 	// Con el fin de recibir el número de pasadas y los últimos ocho chips leídos de
 	// la sesión de cronometraje actual, el host envía PASSINGS<CrLf>.
@@ -103,13 +104,13 @@ public class PasingsCommand extends MacshaCommand {
 	@Override
 	public void parseCommandRow(String[] row) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void sendResponse(OutputStream dataOutputStream) throws IOException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

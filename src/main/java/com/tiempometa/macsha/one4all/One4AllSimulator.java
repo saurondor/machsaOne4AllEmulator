@@ -32,7 +32,8 @@ import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.Random;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.tiempometa.macsha.one4all.commands.ClearFilesCommand;
 import com.tiempometa.macsha.one4all.commands.GetFileCommand;
@@ -84,7 +85,7 @@ public class One4AllSimulator implements Runnable, CommandListener {
 	public static final String COMMAND_GETSTATUS = "GETSTATUS";
 	private static final String COMMAND_HELLO = "HELLO";
 
-	private static final Logger logger = Logger.getLogger(One4AllSimulator.class);
+	private static final Logger logger = LogManager.getLogger(One4AllSimulator.class);
 	private ServerSocket serverSocket;
 	private int port = 10002; // use default port
 	private Socket clientSocket = null;

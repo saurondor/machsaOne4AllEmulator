@@ -34,7 +34,8 @@ import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.filechooser.FileFilter;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.jgoodies.forms.factories.*;
 import com.jgoodies.forms.layout.*;
@@ -46,7 +47,7 @@ import com.tiempometa.macsha.one4all.states.UserInterfaceListener;
  */
 public class JOne4All extends JFrame implements UserInterfaceListener {
 	private static final String BACKUP_PATH = "BACKUP_PATH";
-	private static final Logger logger = Logger.getLogger(JOne4All.class);
+	private static final Logger logger = LogManager.getLogger(JOne4All.class);
 	/**
 	 * 
 	 */
